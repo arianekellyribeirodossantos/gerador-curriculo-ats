@@ -293,7 +293,7 @@ export default function App() {
             </button>
           </div>
 
-          {data.experisencias.map((exp) => (
+          {data.experiencias.map((exp) => (
             <div key={exp.id} className="p-3 bg-gray-50 border rounded-md flex flex-col gap-3 relative group">
               <button 
                 onClick={() => removeExperiencia(exp.id)}
