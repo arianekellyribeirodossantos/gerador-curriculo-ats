@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Configurações especiais para a impressão limpa do PDF */
+@media print {
+  @page {
+    size: A4;
+    margin: 0; /* Zera a margem nativa do navegador */
+  }
+
+  body {
+    background-color: #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
