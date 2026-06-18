@@ -69,3 +69,12 @@ Desenvolvido com 💻 por Ariane Kelly Ribeiro dos Santos — Tech Recruiter & D
 LinkedIn: in/arianekellyribeirodossantos
 
 GitHub: @arianekellyribeirodossantos
+
+
+## 🔒 Privacidade e Segurança de Dados (LGPD)
+
+O **Gerador de Currículo ATS** foi arquitetado sob o princípio de *Privacy by Design*:
+
+- **Armazenamento Zero:** A aplicação é totalmente executada no lado do cliente (*client-side*). Não existem servidores intermediários, APIs de telemetria ou bancos de dados integrados.
+- **Processamento Local:** Todos os dados pessoais, acadêmicos e profissionais digitados nos formulários permanecem exclusivamente na memória volátil do navegador do usuário e são destruídos ao fechar ou atualizar a aba.
+- **Conformidade Nativa:** Por não coletar, reter ou compartilhar informações de identificação pessoal (PII), o sistema opera em conformidade com as diretrizes da LGPD (Lei Geral de Proteção de Dados).
