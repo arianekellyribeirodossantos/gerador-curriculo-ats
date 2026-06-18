@@ -52,8 +52,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col md:flex-row">
-      {/* LADO ESQUERDO: FORMULÁRIO */}
-      <div className="w-full md:w-1/2 p-8 bg-white shadow-md h-screen overflow-y-auto print:hidden">
+      {/* LADO ESQUERDO: FORMULÁRIO COM ROLAGEM CORRIGIDA */}
+      <div className="w-full md:w-1/2 p-8 bg-white shadow-md md:h-screen md:overflow-y-auto print:hidden">
         <h1 className="text-2xl font-bold text-gray-800 mb-2">Gerador de Currículo ATS</h1>
         
         {/* 🔒 AVISO DE PRIVACIDADE E SEGURANÇA LOCAL */}
@@ -200,7 +200,7 @@ export default function App() {
         </form>
       </div>
 
-      {/* LADO DIREITO: PRÉ-VISUALIZAÇÃO (Padrão de leitura para ATS) */}
+      {/* LADO DIREITO: PRÉ-VISUALIZAÇÃO */}
       <div className="w-full md:w-1/2 p-12 bg-gray-200 min-h-screen flex justify-center items-start overflow-y-auto print:p-0 print:bg-white print:w-full">
         <div className="bg-white p-12 shadow-lg w-full max-w-[21cm] min-h-[29.7cm] text-gray-900 font-sans text-sm border border-gray-300 print:border-none print:shadow-none print:p-0">
           
