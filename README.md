@@ -1,73 +1,27 @@
-# React + TypeScript + Vite
+# Gerador de Currículo ATS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma ferramenta web desenvolvida para auxiliar profissionais a criarem currículos otimizados para sistemas ATS (Applicant Tracking System), garantindo que as informações sejam lidas corretamente pelos robôs de triagem das empresas.
 
-Currently, two official plugins are available:
+## Sobre o Projeto
+Como Tech Recruiter em transição para o Desenvolvimento de Software, desenvolvi esta aplicação para resolver um problema real do mercado: a perda de oportunidades devido à má formatação de currículos em sistemas automatizados. O foco foi criar um layout de coluna única e limpo, garantindo total compatibilidade com sistemas de leitura.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologias Utilizadas
+* **React.js**: Biblioteca principal para construção da interface.
+* **TypeScript**: Garantindo maior segurança e tipagem no código.
+* **Tailwind CSS**: Estilização focada em responsividade e design limpo.
+* **Vite**: Ferramenta de build para um ambiente de desenvolvimento rápido.
 
-## React Compiler
+## Funcionalidades
+* Interface intuitiva para preenchimento de dados pessoais, formação e experiência.
+* Layout otimizado para extração de texto por sistemas ATS.
+* Função de exportação direta para PDF (via `@media print`).
+* Privacidade total: os dados não são salvos em servidores externos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Como rodar o projeto localmente
+1. Clone o repositório: `git clone https://github.com/arianekellyribeirodossantos/gerador-curriculo-ats.git`
+2. Entre na pasta: `cd gerador-curriculo-ats`
+3. Instale as dependências: `npm install`
+4. Inicie o servidor de desenvolvimento: `npm run dev`
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+Desenvolvido por Ariane Kelly Ribeiro dos Santos.
